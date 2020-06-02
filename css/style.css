@@ -9,10 +9,27 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; }
 
-.container {
-  background-color: #f9f7f6; }
-
 body {
   font-family: 'Noto Serif JP', serif;
   font-weight: 300;
   color: #DEB992; }
+
+.container {
+  background-color: #f9f7f6;
+  display: grid;
+  grid-template-rows: 100vh repeat(2, 1fr);
+  grid-template-columns: repeat(6, minmax(min-content, 1fr)); }
+
+.header {
+  background-color: #051622;
+  grid-column: 1 / -1; }
+
+.middle {
+  background-color: inherit;
+  grid-row: 2 / -1;
+  grid-column: 1 / -1; }
+
+.footer {
+  background-color: #051622;
+  grid-column: 1 / -1;
+  grid-row: 3 / 6; }

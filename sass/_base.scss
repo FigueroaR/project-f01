@@ -30,13 +30,18 @@ html {
   font-size: 62.5%;
 }
 
-.container {
-  background-color: $color-grey-light-1;
-
-}
-
 body {
   font-family: 'Noto Serif JP', serif;
   font-weight: 300;
   color: $color-3-primary;
+}
+
+
+.container {
+  background-color: $color-grey-light-1;
+
+  display: grid;
+  grid-template-rows: 100vh repeat(2, 1fr) ;
+  grid-template-columns: repeat(6, minmax(min-content, 1fr));
+
 }
