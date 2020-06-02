@@ -1,0 +1,19 @@
+{
+  "name": "project-f01",
+  "version": "1.0.0",
+  "description": "Photo Portflio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FigueroaR/project-f01.git"
+  },
+  "author": "Raul Figueroa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FigueroaR/project-f01/issues"
+  },
+  "homepage": "https://github.com/FigueroaR/project-f01#readme"
+}
