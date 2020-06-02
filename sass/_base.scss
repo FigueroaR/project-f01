@@ -1,0 +1,35 @@
+//////////////////////////////////////////////////// Colors 
+$color-1-light: #0b324d;
+$color-1: #051622;
+$color-1-dark:  #030c12;
+
+
+$color-2-light: #23cfc4;
+$color-2: #1BA098;
+$color-2-dark: #0f635e;
+
+$color-3-light: #f5cca2;
+$color-3-primary: #DEB992;
+$color-3-dark: #a3876a;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+////////////////////////////////////////////////////////// 
+
+
+*,
+*::before,
+*::After {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.container {
+  background-color: $color-grey-light-1;
+}
