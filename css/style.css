@@ -10,19 +10,46 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
   font-weight: 300;
   color: #DEB992; }
 
 .container {
   background-color: #f9f7f6;
   display: grid;
-  grid-template-rows: 100vh repeat(2, 1fr);
-  grid-template-columns: repeat(6, minmax(min-content, 1fr)); }
+  grid-template-rows: 100vh repeat(2, min-content);
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
 .header {
   background-color: #051622;
-  grid-column: 1 / -1; }
+  grid-column: 1 / -1;
+  background-image: linear-gradient(rgba(11, 50, 77, 0.8), rgba(15, 99, 94, 0.95)), url(../img/land-9.jpg);
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+  grid-template-columns: minmax(min-content, max-content);
+  justify-content: center;
+  align-content: center; }
+  .header__heading-2 {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 3.5rem;
+    align-items: center; }
+    .header__heading-2::before, .header__heading-2::after {
+      content: "";
+      height: 1px;
+      display: block;
+      background-color: currentColor; }
+  .header__nav {
+    list-style: none;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    cursor: pointer; }
+  .header__link {
+    color: inherit;
+    font-size: 1.6rem;
+    text-decoration: none; }
 
 .middle {
   background-color: inherit;
@@ -33,3 +60,11 @@ body {
   background-color: #051622;
   grid-column: 1 / -1;
   grid-row: 3 / 6; }
+
+.heading-1 {
+  font-size: 30rem;
+  font-weight: 100; }
+
+.heading-2 {
+  font-size: 1.8rem;
+  font-weight: 200; }

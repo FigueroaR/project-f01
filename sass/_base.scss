@@ -9,12 +9,15 @@ $color-2: #1BA098;
 $color-2-dark: #0f635e;
 
 $color-3-light: #f5cca2;
-$color-3-primary: #DEB992;
+$color-3: #DEB992;
 $color-3-dark: #a3876a;
 
 $color-grey-light-1: #f9f7f6;
 $color-grey-light-2: #aaa;
 ////////////////////////////////////////////////////////// 
+
+/// FONT
+$font-primary: 'Noto Serif JP', serif;
 
 
 *,
@@ -31,9 +34,9 @@ html {
 }
 
 body {
-  font-family: 'Noto Serif JP', serif;
+  font-family: $font-primary;
   font-weight: 300;
-  color: $color-3-primary;
+  color: $color-3;
 }
 
 
@@ -41,7 +44,8 @@ body {
   background-color: $color-grey-light-1;
 
   display: grid;
-  grid-template-rows: 100vh repeat(2, 1fr) ;
-  grid-template-columns: repeat(6, minmax(min-content, 1fr));
+  grid-template-rows: 100vh repeat(2, min-content) ;
+  //grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 
 }
