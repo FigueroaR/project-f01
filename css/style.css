@@ -11,3 +11,8 @@ html {
 
 .container {
   background-color: #f9f7f6; }
+
+body {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 300;
+  color: #DEB992; }
