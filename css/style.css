@@ -51,7 +51,12 @@ body {
   .header__link {
     color: inherit;
     font-size: 1.6rem;
-    text-decoration: none; }
+    text-decoration: none;
+    position: relative;
+    transition: all .2s; }
+    .header__link:hover {
+      color: #1BA098;
+      box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1); }
 
 .middle {
   background-color: inherit;

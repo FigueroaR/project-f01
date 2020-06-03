@@ -45,5 +45,12 @@
     color: inherit;
     font-size: 1.6rem;
     text-decoration: none;
+    position: relative;
+    transition: all .2s;
+
+    &:hover {
+      color: $color-2;
+      box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1);
+    }
   }
 }
