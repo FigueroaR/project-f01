@@ -67,13 +67,32 @@ body {
 .gallery {
   list-style: none;
   display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(min-content, max-content));
+  grid-template-rows: max-content;
   grid-row-gap: 1rem;
   margin-top: 1rem;
   margin-bottom: 2rem; }
-  .gallery__album--img {
-    width: 100%;
-    height: 100%; }
+  .gallery__album {
+    display: grid; }
+    .gallery__album--1 {
+      background-image: url(../img/people-17.jpg);
+      background-size: cover;
+      height: 100vh;
+      display: grid; }
+    .gallery__album--2 {
+      background-image: url(../img/auto-17.jpg);
+      background-size: cover;
+      height: 100vh; }
+    .gallery__album--3 {
+      background-image: url(../img/abs-17.jpg);
+      background-size: cover;
+      height: 100vh; }
+    .gallery__album--4 {
+      background-image: url(../img/land-17.jpg);
+      height: 100vh;
+      background-size: cover; }
+    .gallery__album--text {
+      align-self: center;
+      justify-self: center; }
 
 .footer {
   background-color: #051622;
