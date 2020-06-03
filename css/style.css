@@ -18,7 +18,7 @@ body {
   margin: 1rem;
   background-color: #f9f7f6;
   display: grid;
-  grid-template-rows: 100vh repeat(2, max-content);
+  grid-template-rows: 100vh repeat(2, 1fr);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
 .header {
@@ -64,15 +64,15 @@ body {
   background-color: inherit;
   grid-row: 2 / -1;
   grid-column: 1 / -1;
-  margin-bottom: auto; }
+  display: block; }
 
 .gallery {
   list-style: none;
   display: grid;
-  grid-template-rows: max-content;
+  grid-template-rows: repeat(4, 1fr) min-content;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, max-content));
   grid-row-gap: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 4.5rem; }
+  margin-top: 1rem; }
   .gallery__album {
     display: grid; }
     .gallery__album--1 {
@@ -80,6 +80,7 @@ body {
       background-size: cover;
       background-position: center;
       height: 50vh;
+      grid-row: 1 / 2;
       transition: all .2s; }
       .gallery__album--1:hover {
         background-image: url(../img/people-17.jpg); }
@@ -128,7 +129,30 @@ body {
 .footer {
   background-color: #051622;
   grid-column: 1 / -1;
-  grid-row: 3 / -1; }
+  grid-row: 4 / -1;
+  align-items: center;
+  padding: 8rem; }
+
+.nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: minmax(min-content, max-content);
+  justify-content: center;
+  align-items: center; }
+  .nav__link:link, .nav__link:visited {
+    font-size: 1.5rem;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    display: block; }
+
+.copyright {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-size: 1.5rem;
+  display: block;
+  width: 60%; }
 
 .heading-1 {
   font-size: 30rem;
