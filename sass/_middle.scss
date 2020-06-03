@@ -11,11 +11,12 @@
   list-style: none;
 
   display: grid;
-  grid-template-rows: repeat(4, 1fr) min-content;
+  grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(auto-fit, minmax(min-content, max-content));
   grid-row-gap: 1rem;
 
   margin-top: 1rem;
+  margin-bottom: 1rem;
 
   &__album {
     display: grid;
