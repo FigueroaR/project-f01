@@ -22,7 +22,8 @@
     &--1 {
       background-image: linear-gradient( rgba($color-2-dark, .80), rgba($color-3-dark, .95)), url(../img/people-17.jpg);
       background-size: cover;
-      height: 100vh;
+      background-position: center;
+      height: 50vh;
 
       transition: all .2s;
       &:hover {
@@ -37,7 +38,8 @@
     &--2 {
       background-image: linear-gradient( rgba($color-3-dark, .80), rgba($color-2-dark, .95)), url(../img/auto-17.jpg);
       background-size: cover;
-      height: 100vh;
+      background-position: center;
+      height: 50vh;
 
       transition: all .2s;
       &:hover{
@@ -52,12 +54,13 @@
     &--3 {
       background-image: linear-gradient( rgba($color-2-dark, .80), rgba($color-3-dark, .95)), url(../img/abs-17.jpg);
       background-size: cover;
-      height: 100vh;
+      background-position: center;
+      height: 50vh;
 
-      &:hover{
+      &:hover {
+
         background-image:  url(../img/abs-17.jpg);
         a {
-  
             transform: scale(3.5) translateY(-10px);
             color: #fff;
             //transform: ;
@@ -67,8 +70,9 @@
 
     &--4 {
       background-image: linear-gradient( rgba($color-3-dark, .80), rgba($color-2-dark, .95)), url(../img/land-17.jpg);
-      height: 100vh;
+      height: 50vh;
       background-size: cover;
+      background-position: center;
 
       
       &:hover{
@@ -77,7 +81,6 @@
   
             transform: scale(3.5) translateY(-10px);
             color: #fff;
-            //transform: ;
         }
       }
     }
