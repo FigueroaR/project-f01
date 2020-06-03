@@ -2,7 +2,6 @@
   background-color:  inherit;
   grid-row: 2 / -1; 
   grid-column: 1 / -1;
-  
 }
 
 .gallery {
@@ -14,41 +13,82 @@
 
   margin-top: 1rem;
   margin-bottom: 2rem;
+  
 
   &__album {
     display: grid;
+    
+    
     &--1 {
-      background-image: url(../img/people-17.jpg);
+      background-image: linear-gradient( rgba($color-2-dark, .80), rgba($color-3-dark, .95)), url(../img/people-17.jpg);
       background-size: cover;
       height: 100vh;
-      //width: 100%;
 
-      display: grid;
+      transition: all .2s;
+      &:hover {
+        background-image:  url(../img/people-17.jpg);
+        a {
+            transform: scale(3.5) translateY(-10px);
+            color: #fff;
+        }
+      }
     }
 
     &--2 {
-      background-image: url(../img/auto-17.jpg);
+      background-image: linear-gradient( rgba($color-3-dark, .80), rgba($color-2-dark, .95)), url(../img/auto-17.jpg);
       background-size: cover;
       height: 100vh;
-      //width: 100%;
+
+      transition: all .2s;
+      &:hover{
+        background-image:  url(../img/auto-17.jpg);
+        a {
+            transform: scale(3.5) translateY(-10px);
+            color: #fff;
+        }
+      }
     }
 
     &--3 {
-      background-image: url(../img/abs-17.jpg);
+      background-image: linear-gradient( rgba($color-2-dark, .80), rgba($color-3-dark, .95)), url(../img/abs-17.jpg);
       background-size: cover;
       height: 100vh;
-      //width: 100%;
+
+      &:hover{
+        background-image:  url(../img/abs-17.jpg);
+        a {
+  
+            transform: scale(3.5) translateY(-10px);
+            color: #fff;
+            //transform: ;
+        }
+      }
     }
 
     &--4 {
-      background-image: url(../img/land-17.jpg);
+      background-image: linear-gradient( rgba($color-3-dark, .80), rgba($color-2-dark, .95)), url(../img/land-17.jpg);
       height: 100vh;
       background-size: cover;
+
+      
+      &:hover{
+        background-image:  url(../img/land-17.jpg);
+        a {
+  
+            transform: scale(3.5) translateY(-10px);
+            color: #fff;
+            //transform: ;
+        }
+      }
     }
 
     &--text {
       align-self: center;
       justify-self: center;
+      cursor: pointer;
+      color: inherit;
+      text-decoration: none;
+      transition: all .3s;
     }
   }
 }
