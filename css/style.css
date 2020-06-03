@@ -63,7 +63,8 @@ body {
 .middle {
   background-color: inherit;
   grid-row: 2 / -1;
-  grid-column: 1 / -1; }
+  grid-column: 1 / -1;
+  margin-bottom: auto; }
 
 .gallery {
   list-style: none;
@@ -128,27 +129,6 @@ body {
   background-color: #051622;
   grid-column: 1 / -1;
   grid-row: 3 / -1; }
-
-.nav {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  grid-template-rows: max-content;
-  grid-gap: 3rem;
-  align-items: center; }
-  .nav__link:link, .nav__link:visited {
-    font-size: 1.4rem;
-    color: #FFF;
-    text-decoration: none;
-    text-align: center;
-    display: block; }
-
-.copyright {
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-  font-size: 1.4rem;
-  display: block; }
 
 .heading-1 {
   font-size: 30rem;
