@@ -65,9 +65,12 @@ body {
   grid-column: 1 / -1; }
 
 .gallery {
+  list-style: none;
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(min-content, max-content));
-  list-style: none; }
+  grid-row-gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem; }
   .gallery__album--img {
     width: 100%;
     height: 100%; }
