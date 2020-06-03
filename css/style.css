@@ -137,16 +137,20 @@ body {
 
 .nav {
   list-style: none;
-  display: grid;
-  grid-template-columns: minmax(min-content, max-content);
-  justify-content: center;
-  align-items: center; }
+  display: flex;
+  justify-content: center; }
   .nav__link:link, .nav__link:visited {
     font-size: 1.5rem;
     color: #FFF;
     text-decoration: none;
     text-align: center;
-    display: block; }
+    display: block;
+    margin-right: 3rem;
+    margin-bottom: 6rem; }
+  .nav__link:hover, .nav__link:active {
+    background-color: transparent;
+    transform: translateY(-3px);
+    color: #1BA098; }
 
 .copyright {
   margin-right: auto;

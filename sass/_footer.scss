@@ -9,13 +9,9 @@
 
 .nav {
   list-style: none;
-  display: grid;
-  //grid-template-rows: ;
-  grid-template-columns: minmax(min-content, max-content);
-
-  //grid-gap: 1rem;
+  display: flex;
+  //margin-right: auto;
   justify-content: center;
-  align-items: center;
 
   &__link:link,
   &__link:visited {
@@ -24,7 +20,15 @@
     text-decoration: none;
     text-align: center;
     display: block;
+    margin-right: 3rem;
+    margin-bottom: 6rem;
+  }
 
+  &__link:hover,
+  &__link:active {
+    background-color: transparent;
+    transform: translateY(-3px);  // negative number pull it up
+    color: $color-2;
   }
 }
 
