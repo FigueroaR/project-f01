@@ -1,10 +1,12 @@
 .footer {
-  background-color: $color-1;
- 
+  background-color: $color-1-dark;
+  //background-image: linear-gradient(rgba($color-2-dark, 1), rgba($color-1-dark, 1));
   grid-column: 1 / -1;
   grid-row: 4 / -1; 
   align-items: center;
   padding: 8rem;
+
+  
 }
 
 .nav {
@@ -40,4 +42,5 @@
   font-size: 1.5rem;
   display: block;
   width: 60%; 
+  color: #FFF;
 }

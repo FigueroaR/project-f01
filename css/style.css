@@ -109,7 +109,7 @@ body {
         color: #fff; }
 
 .footer {
-  background-color: #051622;
+  background-color: #030c12;
   grid-column: 1 / -1;
   grid-row: 4 / -1;
   align-items: center;
@@ -138,7 +138,8 @@ body {
   text-align: center;
   font-size: 1.5rem;
   display: block;
-  width: 60%; }
+  width: 60%;
+  color: #FFF; }
 
 .heading-1 {
   font-size: 30rem;
