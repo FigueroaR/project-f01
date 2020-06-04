@@ -201,6 +201,46 @@ body {
       color: #1BA098;
       box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1); }
 
+.landscape {
+  background-color: #051622;
+  grid-column: 1 / -1;
+  background-image: linear-gradient(rgba(11, 50, 77, 0.8), rgba(15, 99, 94, 0.95)), url(../img/land-6.jpg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+  grid-template-columns: minmax(min-content, max-content);
+  justify-content: center;
+  align-content: center; }
+  .landscape__heading-1 {
+    padding-top: 7rem; }
+  .landscape__heading-2 {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 3.5rem;
+    align-items: center;
+    padding-bottom: 3rem; }
+    .landscape__heading-2::before, .landscape__heading-2::after {
+      content: "";
+      height: 1px;
+      display: block;
+      background-color: currentColor; }
+  .landscape__nav {
+    list-style: none;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    cursor: pointer; }
+  .landscape__link {
+    color: inherit;
+    font-size: 1.6rem;
+    text-decoration: none;
+    position: relative;
+    transition: all .2s; }
+    .landscape__link:hover {
+      color: #1BA098;
+      box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1); }
+
 .middle {
   background-color: inherit;
   grid-row: 2 / -1;
