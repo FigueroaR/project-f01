@@ -157,12 +157,12 @@ body {
   margin-top: 1rem;
   margin-bottom: 1rem; }
 
-.portraits {
+.collection {
   list-style: none;
   display: grid;
   grid-row-gap: 1rem;
   grid-template-columns: repeat(auto-fit, min-content); }
-  .portraits__image {
+  .collection__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
