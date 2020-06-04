@@ -21,6 +21,26 @@ body {
   grid-template-rows: 100vh repeat(2, 1fr);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
+.middle {
+  background-color: inherit;
+  grid-row: 2 / -1;
+  grid-column: 1 / -1;
+  display: block;
+  list-style: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.collection {
+  list-style: none;
+  display: grid;
+  grid-row-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, min-content); }
+  .collection__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; }
+
 .header {
   background-color: #051622;
   grid-column: 1 / -1;
@@ -61,7 +81,47 @@ body {
       color: #1BA098;
       box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1); }
 
-.header-portrait {
+.abstract {
+  background-color: #051622;
+  grid-column: 1 / -1;
+  background-image: linear-gradient(rgba(11, 50, 77, 0.8), rgba(15, 99, 94, 0.95)), url(../img/abs-6.jpg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+  grid-template-columns: minmax(min-content, max-content);
+  justify-content: center;
+  align-content: center; }
+  .abstract__heading-1 {
+    padding-top: 7rem; }
+  .abstract__heading-2 {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 3.5rem;
+    align-items: center;
+    padding-bottom: 3rem; }
+    .abstract__heading-2::before, .abstract__heading-2::after {
+      content: "";
+      height: 1px;
+      display: block;
+      background-color: currentColor; }
+  .abstract__nav {
+    list-style: none;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    cursor: pointer; }
+  .abstract__link {
+    color: inherit;
+    font-size: 1.6rem;
+    text-decoration: none;
+    position: relative;
+    transition: all .2s; }
+    .abstract__link:hover {
+      color: #1BA098;
+      box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1); }
+
+.portrait {
   background-color: #051622;
   grid-column: 1 / -1;
   background-image: linear-gradient(rgba(11, 50, 77, 0.8), rgba(15, 99, 94, 0.95)), url(../img/people-4.jpg);
@@ -72,32 +132,32 @@ body {
   grid-template-columns: minmax(min-content, max-content);
   justify-content: center;
   align-content: center; }
-  .header-portrait__heading-1 {
+  .portrait__heading-1 {
     padding-top: 7rem; }
-  .header-portrait__heading-2 {
+  .portrait__heading-2 {
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     grid-column-gap: 3.5rem;
     align-items: center;
     padding-bottom: 3rem; }
-    .header-portrait__heading-2::before, .header-portrait__heading-2::after {
+    .portrait__heading-2::before, .portrait__heading-2::after {
       content: "";
       height: 1px;
       display: block;
       background-color: currentColor; }
-  .header-portrait__nav {
+  .portrait__nav {
     list-style: none;
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     cursor: pointer; }
-  .header-portrait__link {
+  .portrait__link {
     color: inherit;
     font-size: 1.6rem;
     text-decoration: none;
     position: relative;
     transition: all .2s; }
-    .header-portrait__link:hover {
+    .portrait__link:hover {
       color: #1BA098;
       box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1); }
 
@@ -147,26 +207,6 @@ body {
       .gallery__album--text:hover {
         transform: scale(3.5) translateY(-10px);
         color: #fff; }
-
-.middle {
-  background-color: inherit;
-  grid-row: 2 / -1;
-  grid-column: 1 / -1;
-  display: block;
-  list-style: none;
-  margin-top: 1rem;
-  margin-bottom: 1rem; }
-
-.collection {
-  list-style: none;
-  display: grid;
-  grid-row-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, min-content); }
-  .collection__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block; }
 
 .footer {
   background-color: #030c12;

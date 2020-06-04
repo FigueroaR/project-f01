@@ -1,0 +1,58 @@
+.abstract {
+  
+  background-color: $color-1;
+  grid-column: 1 / -1;
+
+  background-image: linear-gradient( rgba($color-1-light, .80), rgba($color-2-dark, .95)), url(../img/abs-6.jpg);
+  background-size: cover;
+  background-position: center;
+
+  display: grid;
+  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+  grid-template-columns: minmax(min-content, max-content);
+
+  justify-content: center; 
+  align-content: center;
+  &__heading-1 {
+    padding-top: 7rem;
+  }
+
+  &__heading-2 {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 3.5rem;
+    align-items: center;
+    padding-bottom: 3rem;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 1px;
+      display: block;
+      background-color: currentColor; // here we inherit the color of the parent text
+    }
+  }
+
+  &__nav {
+    list-style: none;
+    
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    
+    cursor: pointer;
+  }
+
+  &__link  {
+    color: inherit;
+    font-size: 1.6rem;
+    text-decoration: none;
+    position: relative;
+    transition: all .2s;
+
+    &:hover {
+      color: $color-2;
+      box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1);
+    }
+  }
+}
