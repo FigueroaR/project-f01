@@ -1,3 +1,44 @@
+.abouts {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(min-content, max-content));
+  grid-template-columns: minmax(min-content, max-content);
+  justify-content: center;
+  align-content: center; }
+  .abouts__text {
+    margin-bottom: 8rem;
+    font-size: 5rem;
+    font-weight: 100;
+    display: grid;
+    grid-template-columns: max-content;
+    justify-items: center;
+    align-items: center; }
+  .abouts__heading-2 {
+    display: grid;
+    grid-template-columns: 1fr minmax(min-content, max-content) 1fr;
+    grid-column-gap: 2.5rem;
+    align-items: center;
+    padding-bottom: 8rem; }
+    .abouts__heading-2::before, .abouts__heading-2::after {
+      content: "";
+      height: 1px;
+      background-color: currentColor; }
+  .abouts__nav {
+    list-style: none;
+    display: grid;
+    justify-items: center;
+    grid-gap: 3rem;
+    text-transform: uppercase; }
+  .abouts__link {
+    color: inherit;
+    font-size: 1.7rem;
+    text-decoration: none;
+    position: relative;
+    transition: all .2s; }
+    .abouts__link:hover {
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1); }
+
 .contacts {
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(min-content, max-content));
@@ -34,6 +75,8 @@
     position: relative;
     transition: all .2s; }
     .contacts__link:hover {
+      color: #fff;
+      cursor: pointer;
       box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1); }
 
 *,
@@ -62,7 +105,19 @@ body {
 .contact {
   background-color: #051622;
   grid-column: 1 / -1;
-  background-image: linear-gradient(rgba(11, 50, 77, 0.8), rgba(15, 99, 94, 0.95)), url(../img/hero.jpg);
+  background-image: linear-gradient(rgba(3, 12, 18, 0.8), rgba(27, 160, 152, 0.95)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 100vh;
+  grid-template-columns: minmax(min-content, max-content);
+  justify-content: center;
+  align-content: center; }
+
+.about {
+  background-color: #051622;
+  grid-column: 1 / -1;
+  background-image: linear-gradient(rgba(3, 12, 18, 0.8), rgba(27, 160, 152, 0.95)), url(../img/hero.jpg);
   background-size: cover;
   background-position: center;
   display: grid;

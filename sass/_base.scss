@@ -56,7 +56,7 @@ body {
   background-color: $color-1;
   grid-column: 1 / -1;
 
-  background-image: linear-gradient( rgba($color-1-light, .80), rgba($color-2-dark, .95)), url(../img/hero.jpg);
+  background-image: linear-gradient( rgba($color-1-dark, .80), rgba($color-2, .95)), url(../img/hero.jpg);
   background-size: cover;
   background-position: center;
 
@@ -67,4 +67,20 @@ body {
   justify-content: center; 
   align-content: center;
   
+}
+
+.about {
+  background-color: $color-1;
+  grid-column: 1 / -1;
+
+  background-image: linear-gradient( rgba($color-1-dark, .80), rgba($color-2, .95)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+
+  display: grid;
+  grid-template-rows: 100vh;
+  grid-template-columns: minmax(min-content, max-content);
+
+  justify-content: center; 
+  align-content: center;
 }
