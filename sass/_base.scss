@@ -50,3 +50,21 @@ body {
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 
 }
+
+.contact {
+  
+  background-color: $color-1;
+  grid-column: 1 / -1;
+
+  background-image: linear-gradient( rgba($color-1-light, .80), rgba($color-2-dark, .95)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+
+  display: grid;
+  grid-template-rows: 100vh;
+  grid-template-columns: minmax(min-content, max-content);
+
+  justify-content: center; 
+  align-content: center;
+  
+}
