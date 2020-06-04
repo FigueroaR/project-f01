@@ -20,21 +20,21 @@
     display: grid;
     
     &--1 {
-      background-image: linear-gradient( rgba($color-2-dark, .80), rgba($color-3-dark, .95)), url(../img/people-17.jpg);
+      background-image: linear-gradient( rgba($color-2-dark, .80), rgba($color-3-dark, .95)), url(../img/people-4.jpg);
       background-size: cover;
       background-position: center;
       height: 50vh;
     }
 
     &--2 {
-      background-image: linear-gradient( rgba($color-3-dark, .80), rgba($color-2-dark, .95)), url(../img/auto-17.jpg);
+      background-image: linear-gradient( rgba($color-3-dark, .80), rgba($color-2-dark, .95)), url(../img/auto-2.jpg);
       background-size: cover;
       background-position: center;
       height: 50vh;
     }
 
     &--3 {
-      background-image: linear-gradient( rgba($color-2-dark, .80), rgba($color-3-dark, .95)), url(../img/abs-17.jpg);
+      background-image: linear-gradient( rgba($color-2-dark, .80), rgba($color-3-dark, .95)), url(../img/abs-6.jpg);
       background-size: cover;
       background-position: center;
       height: 50vh;

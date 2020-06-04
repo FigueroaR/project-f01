@@ -78,17 +78,17 @@ body {
   .gallery__album {
     display: grid; }
     .gallery__album--1 {
-      background-image: linear-gradient(rgba(15, 99, 94, 0.8), rgba(163, 135, 106, 0.95)), url(../img/people-17.jpg);
+      background-image: linear-gradient(rgba(15, 99, 94, 0.8), rgba(163, 135, 106, 0.95)), url(../img/people-4.jpg);
       background-size: cover;
       background-position: center;
       height: 50vh; }
     .gallery__album--2 {
-      background-image: linear-gradient(rgba(163, 135, 106, 0.8), rgba(15, 99, 94, 0.95)), url(../img/auto-17.jpg);
+      background-image: linear-gradient(rgba(163, 135, 106, 0.8), rgba(15, 99, 94, 0.95)), url(../img/auto-2.jpg);
       background-size: cover;
       background-position: center;
       height: 50vh; }
     .gallery__album--3 {
-      background-image: linear-gradient(rgba(15, 99, 94, 0.8), rgba(163, 135, 106, 0.95)), url(../img/abs-17.jpg);
+      background-image: linear-gradient(rgba(15, 99, 94, 0.8), rgba(163, 135, 106, 0.95)), url(../img/abs-6.jpg);
       background-size: cover;
       background-position: center;
       height: 50vh; }
