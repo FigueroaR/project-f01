@@ -3,6 +3,8 @@
   grid-row: 2 / -1; 
   grid-column: 1 / -1;
   display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .gallery {
@@ -13,8 +15,7 @@
   grid-template-columns: repeat(auto-fit, minmax(min-content, max-content));
   grid-row-gap: 1rem;
 
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  
 
   &__album {
     display: grid;

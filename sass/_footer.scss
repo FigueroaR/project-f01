@@ -5,7 +5,7 @@
   grid-row: 4 / -1; 
   align-items: center;
   padding: 8rem;
-
+  text-transform: uppercase;
   
 }
 
@@ -14,11 +14,12 @@
   display: flex;
   //margin-right: auto;
   justify-content: center;
+  
 
   &__link:link,
   &__link:visited {
     font-size: 1.5rem;
-    color: #FFF;
+    color: $color-2;
     text-decoration: none;
     text-align: center;
     display: block;
@@ -30,7 +31,7 @@
   &__link:active {
     background-color: transparent;
     transform: translateY(-3px);  // negative number pull it up
-    color: $color-2;
+    color: #fff;
   }
 }
 
@@ -42,5 +43,5 @@
   font-size: 1.5rem;
   display: block;
   width: 60%; 
-  color: #FFF;
+  color: $color-2;
 }
