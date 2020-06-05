@@ -216,6 +216,7 @@ body {
     grid-gap: 2rem;
     cursor: pointer;
     text-transform: uppercase;
+    justify-items: center;
     justify-content: center;
     align-content: center; }
     @media only screen and (max-width: 37.5em) {
@@ -466,37 +467,57 @@ body {
 
 .footer {
   background-color: #030c12;
+  display: grid;
   grid-column: 1 / -1;
   grid-row: 4 / -1;
   align-items: center;
   padding: 8rem;
   text-transform: uppercase; }
+  @media only screen and (max-width: 31.25em) {
+    .footer {
+      font-size: 1.2rem;
+      align-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(min-content, max-content));
+      justify-content: center; } }
 
 .nav {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, max-content));
+  grid-template-columns: repeat(auto-fit, minmax(11rem, max-content));
+  align-items: center;
   justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
-  justify-items: center; }
+  color: #1BA098; }
+  @media only screen and (max-width: 31.25em) {
+    .nav {
+      font-size: 1.2rem;
+      width: 100%;
+      margin-bottom: 3rem; } }
   .nav__link:link, .nav__link:visited {
     font-size: 1.5rem;
-    color: #1BA098;
+    color: currentColor;
     text-decoration: none;
     text-align: center;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr;
     margin-bottom: 6rem; }
     @media only screen and (max-width: 31.25em) {
       .nav__link:link, .nav__link:visited {
         font-size: 1.2rem;
-        margin-right: auto; } }
+        margin-right: auto;
+        justify-items: center;
+        justify-self: center;
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+        margin-bottom: 3rem; } }
   .nav__link:hover, .nav__link:active {
     background-color: transparent;
     transform: translateY(-3px);
     color: #fff; }
+    @media only screen and (max-width: 31.25em) {
+      .nav__link:hover, .nav__link:active {
+        transform: none;
+        color: currentColor; } }
 
 .copyright {
   margin-right: auto;
