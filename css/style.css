@@ -165,7 +165,7 @@ body {
 .header {
   background-color: #051622;
   grid-column: 1 / -1;
-  background-image: linear-gradient(rgba(11, 50, 77, 0.8), rgba(15, 99, 94, 0.95)), url(../img/land-9.jpg);
+  background-image: linear-gradient(rgba(11, 50, 77, 0.8), rgba(15, 99, 94, 0.95)), url(../img/land_9.jpg);
   background-size: cover;
   background-position: center;
   display: grid;
@@ -221,7 +221,7 @@ body {
 .abstract {
   background-color: #051622;
   grid-column: 1 / -1;
-  background-image: linear-gradient(rgba(11, 50, 77, 0.8), rgba(15, 99, 94, 0.95)), url(../img/abs-6.jpg);
+  background-image: linear-gradient(rgba(11, 50, 77, 0.8), rgba(15, 99, 94, 0.95)), url(../img/abs_6.jpg);
   background-size: cover;
   background-position: center;
   display: grid;
@@ -261,7 +261,7 @@ body {
 .automotive {
   background-color: #051622;
   grid-column: 1 / -1;
-  background-image: linear-gradient(rgba(11, 50, 77, 0.8), rgba(15, 99, 94, 0.95)), url(../img/auto-6.jpg);
+  background-image: linear-gradient(rgba(11, 50, 77, 0.8), rgba(15, 99, 94, 0.95)), url(../img/auto_26.jpg);
   background-size: cover;
   background-position: center;
   display: grid;
@@ -301,7 +301,7 @@ body {
 .portrait {
   background-color: #051622;
   grid-column: 1 / -1;
-  background-image: linear-gradient(rgba(11, 50, 77, 0.8), rgba(15, 99, 94, 0.95)), url(../img/people-4.jpg);
+  background-image: linear-gradient(rgba(11, 50, 77, 0.8), rgba(15, 99, 94, 0.95)), url(../img/people_4.jpg);
   background-size: cover;
   background-position: center;
   display: grid;
@@ -341,7 +341,7 @@ body {
 .landscape {
   background-color: #051622;
   grid-column: 1 / -1;
-  background-image: linear-gradient(rgba(11, 50, 77, 0.8), rgba(15, 99, 94, 0.95)), url(../img/land-6.jpg);
+  background-image: linear-gradient(rgba(11, 50, 77, 0.8), rgba(15, 99, 94, 0.95)), url(../img/land_6.jpg);
   background-size: cover;
   background-position: center;
   display: grid;
@@ -395,22 +395,22 @@ body {
   .gallery__album {
     display: grid; }
     .gallery__album--1 {
-      background-image: linear-gradient(rgba(15, 99, 94, 0.8), rgba(163, 135, 106, 0.95)), url(../img/people-4.jpg);
+      background-image: linear-gradient(rgba(15, 99, 94, 0.8), rgba(163, 135, 106, 0.95)), url(../img/people_4.jpg);
       background-size: cover;
       background-position: center;
       height: 50vh; }
     .gallery__album--2 {
-      background-image: linear-gradient(rgba(163, 135, 106, 0.8), rgba(15, 99, 94, 0.95)), url(../img/auto-2.jpg);
+      background-image: linear-gradient(rgba(163, 135, 106, 0.8), rgba(15, 99, 94, 0.95)), url(../img/auto_26.jpg);
       background-size: cover;
       background-position: center;
       height: 50vh; }
     .gallery__album--3 {
-      background-image: linear-gradient(rgba(15, 99, 94, 0.8), rgba(163, 135, 106, 0.95)), url(../img/abs-6.jpg);
+      background-image: linear-gradient(rgba(15, 99, 94, 0.8), rgba(163, 135, 106, 0.95)), url(../img/abs_6.jpg);
       background-size: cover;
       background-position: center;
       height: 50vh; }
     .gallery__album--4 {
-      background-image: linear-gradient(rgba(163, 135, 106, 0.8), rgba(15, 99, 94, 0.95)), url(../img/land-17.jpg);
+      background-image: linear-gradient(rgba(163, 135, 106, 0.8), rgba(15, 99, 94, 0.95)), url(../img/land_17.jpg);
       height: 50vh;
       background-size: cover;
       background-position: center; }
