@@ -6,6 +6,13 @@
   list-style: none;
   margin-top: 1rem;
   margin-bottom: 1rem;
+
+  @media only screen and (max-width: $bp-petit) {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+  }
 }
 
 .collection {
@@ -18,8 +25,14 @@
   justify-items: center; 
   align-content: center;
 
+  @media only screen and (max-width: $bp-petit) {
+    padding-left: 0;
+    padding-right: 0;
+    grid-row-gap: .5rem;
+  }
+
   &__image {
-    width: 98%;
+    width: 100%;
     height: 100%;
     object-fit: cover; // object fit only works if we set the height and the width
     display: block;

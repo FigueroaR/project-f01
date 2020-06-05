@@ -151,6 +151,12 @@ body {
   list-style: none;
   margin-top: 1rem;
   margin-bottom: 1rem; }
+  @media only screen and (max-width: 31.25em) {
+    .middle {
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: .5rem;
+      margin-bottom: .5rem; } }
 
 .collection {
   list-style: none;
@@ -159,8 +165,13 @@ body {
   grid-template-columns: repeat(auto-fit, min-content);
   justify-items: center;
   align-content: center; }
+  @media only screen and (max-width: 31.25em) {
+    .collection {
+      padding-left: 0;
+      padding-right: 0;
+      grid-row-gap: .5rem; } }
   .collection__image {
-    width: 98%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     display: block; }
@@ -406,57 +417,58 @@ body {
       padding-right: 0;
       margin-top: .5rem;
       margin-bottom: .5rem; } }
-  .middle .gallery {
-    list-style: none;
+
+.gallery {
+  list-style: none;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr;
+  grid-row-gap: 1rem;
+  justify-content: center;
+  align-content: center; }
+  @media only screen and (max-width: 31.25em) {
+    .gallery {
+      padding-left: 0;
+      padding-right: 0;
+      grid-row-gap: .5rem; } }
+  .gallery__album {
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: 1fr;
-    grid-row-gap: 1rem;
-    justify-content: center;
-    align-content: center; }
-    @media only screen and (max-width: 31.25em) {
-      .middle .gallery {
-        padding-left: 0;
-        padding-right: 0;
-        grid-row-gap: .5rem; } }
-    .middle .gallery__album {
-      display: grid;
-      width: 100%; }
-      .middle .gallery__album--1 {
-        background-image: linear-gradient(rgba(15, 99, 94, 0.8), rgba(163, 135, 106, 0.95)), url(../img/people_4.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 50vh; }
-      .middle .gallery__album--2 {
-        background-image: linear-gradient(rgba(163, 135, 106, 0.8), rgba(15, 99, 94, 0.95)), url(../img/auto_2.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 50vh; }
-      .middle .gallery__album--3 {
-        background-image: linear-gradient(rgba(15, 99, 94, 0.8), rgba(163, 135, 106, 0.95)), url(../img/abs_6.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 50vh; }
-      .middle .gallery__album--4 {
-        background-image: linear-gradient(rgba(163, 135, 106, 0.8), rgba(15, 99, 94, 0.95)), url(../img/land_17.jpg);
-        height: 50vh;
-        background-size: cover;
-        background-position: center; }
-      .middle .gallery__album--text {
-        align-self: center;
-        justify-self: center;
-        cursor: pointer;
-        color: inherit;
-        text-decoration: none;
-        transition: all .3s; }
-        .middle .gallery__album--text:hover {
-          transform: scale(1.5) translateY(-10px);
-          color: #fff; }
-          @media only screen and (max-width: 37.5em) {
-            .middle .gallery__album--text:hover:hover {
-              transform: none;
-              transition: none;
-              color: inherit; } }
+    width: 100%; }
+    .gallery__album--1 {
+      background-image: linear-gradient(rgba(15, 99, 94, 0.8), rgba(163, 135, 106, 0.95)), url(../img/people_4.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 50vh; }
+    .gallery__album--2 {
+      background-image: linear-gradient(rgba(163, 135, 106, 0.8), rgba(15, 99, 94, 0.95)), url(../img/auto_2.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 50vh; }
+    .gallery__album--3 {
+      background-image: linear-gradient(rgba(15, 99, 94, 0.8), rgba(163, 135, 106, 0.95)), url(../img/abs_6.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 50vh; }
+    .gallery__album--4 {
+      background-image: linear-gradient(rgba(163, 135, 106, 0.8), rgba(15, 99, 94, 0.95)), url(../img/land_17.jpg);
+      height: 50vh;
+      background-size: cover;
+      background-position: center; }
+    .gallery__album--text {
+      align-self: center;
+      justify-self: center;
+      cursor: pointer;
+      color: inherit;
+      text-decoration: none;
+      transition: all .3s; }
+      .gallery__album--text:hover {
+        transform: scale(1.5) translateY(-10px);
+        color: #fff; }
+        @media only screen and (max-width: 37.5em) {
+          .gallery__album--text:hover:hover {
+            transform: none;
+            transition: none;
+            color: inherit; } }
 
 .footer {
   background-color: #030c12;
