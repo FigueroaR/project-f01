@@ -11,7 +11,14 @@
     display: grid;
     grid-template-columns: max-content;
     justify-items: center;
-    align-items: center; }
+    align-items: center;
+    text-transform: uppercase; }
+  @media only screen and (max-width: 56.25em) {
+    .abouts p {
+      font-size: 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .abouts p {
+      font-size: 3rem; } }
   .abouts__heading-2 {
     display: grid;
     grid-template-columns: 1fr minmax(min-content, max-content) 1fr;
@@ -47,10 +54,16 @@
   align-content: center; }
   .contacts__heading-1 {
     margin-bottom: 8rem;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 100;
     line-height: 1;
     text-transform: uppercase; }
+    @media only screen and (max-width: 56.25em) {
+      .contacts__heading-1 {
+        font-size: 4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .contacts__heading-1 {
+        font-size: 2.5rem; } }
   .contacts__heading-2 {
     display: grid;
     grid-template-columns: 1fr minmax(min-content, max-content) 1fr;
@@ -101,6 +114,9 @@ body {
   display: grid;
   grid-template-rows: 100vh repeat(2, 1fr);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  @media only screen and (max-width: 56.25em) {
+    .container {
+      margin: 0; } }
 
 .contact {
   background-color: #051622;
@@ -171,6 +187,12 @@ body {
       content: "";
       height: 1px;
       background-color: currentColor; }
+      @media only screen and (max-width: 31.25em) {
+        .header__heading-2::before, .header__heading-2::after {
+          display: none; } }
+    @media only screen and (max-width: 31.25em) {
+      .header__heading-2 {
+        display: none; } }
   .header__nav {
     list-style: none;
     display: grid;
@@ -179,6 +201,13 @@ body {
     grid-gap: 2rem;
     cursor: pointer;
     text-transform: uppercase; }
+    @media only screen and (max-width: 37.5em) {
+      .header__nav {
+        padding-top: 5rem;
+        grid-template-columns: minmax(min-content, max-content);
+        justify-content: center;
+        align-content: center;
+        grid-gap: 3rem; } }
   .header__link {
     color: inherit;
     font-size: 1.6rem;
@@ -393,8 +422,13 @@ body {
       text-decoration: none;
       transition: all .3s; }
       .gallery__album--text:hover {
-        transform: scale(3.5) translateY(-10px);
+        transform: scale(1.5) translateY(-10px);
         color: #fff; }
+        @media only screen and (max-width: 31.25em) {
+          .gallery__album--text:hover:hover {
+            transform: none;
+            transition: none;
+            color: inherit; } }
 
 .footer {
   background-color: #030c12;
@@ -406,16 +440,25 @@ body {
 
 .nav {
   list-style: none;
-  display: flex;
-  justify-content: center; }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, max-content));
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  justify-items: center; }
   .nav__link:link, .nav__link:visited {
     font-size: 1.5rem;
     color: #1BA098;
     text-decoration: none;
     text-align: center;
     display: block;
-    margin-right: 3rem;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 6rem; }
+    @media only screen and (max-width: 31.25em) {
+      .nav__link:link, .nav__link:visited {
+        font-size: 1.2rem;
+        margin-right: auto; } }
   .nav__link:hover, .nav__link:active {
     background-color: transparent;
     transform: translateY(-3px);
@@ -429,16 +472,34 @@ body {
   display: block;
   width: 60%;
   color: #1BA098; }
+  @media only screen and (max-width: 31.25em) {
+    .copyright {
+      font-size: 1rem; } }
 
 .heading-1 {
   font-size: 30rem;
   font-weight: 100;
   line-height: 1; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-1 {
+      font-size: 20rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-1 {
+      font-size: 15rem; } }
 
 .heading-2 {
   font-size: 4rem;
   font-weight: 200;
   line-height: 1; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-2 {
+      font-size: 4.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-2 {
+      font-size: 3rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .heading-2 {
+      font-size: 3.5rem; } }
 
 .heading-3 {
   font-size: 2rem;

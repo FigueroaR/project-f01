@@ -5,6 +5,11 @@
   display: block;
   margin-top: 1rem;
   margin-bottom: 1rem;
+
+  // @media only screen and (max-width: $bp-medium) {
+  //   margin-top: 0rem;
+  // margin-bottom: 0rem;
+  // }
 }
 
 .gallery {
@@ -15,10 +20,14 @@
   grid-template-columns: repeat(auto-fit, minmax(min-content, max-content));
   grid-row-gap: 1rem;
 
+  // @media only screen and (max-width: $bp-medium) {
+  //   grid-row-gap: 0rem;
+  // }
   
 
   &__album {
     display: grid;
+    
     
     &--1 {
       background-image: linear-gradient( rgba($color-2-dark, .80), rgba($color-3-dark, .95)), url(../img/people-4.jpg);
@@ -56,10 +65,26 @@
       text-decoration: none;
       transition: all .3s;
 
+    
+
+
       &:hover {
-        transform: scale(3.5) translateY(-10px);
+        transform: scale(1.5) translateY(-10px);
         color: #fff;
+
+        @media only screen and (max-width: $bp-petit) {
+          
+          &:hover {
+            transform: none;
+            transition: none;
+            color: inherit;
+          }
+        }
+
       }
+
+     
+      
     }
   }
 }

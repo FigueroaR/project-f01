@@ -2,12 +2,32 @@
   font-size: 30rem;
   font-weight: 100;
   line-height: 1; //this makes the spacing between broken lines be smaller
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 20rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 15rem;
+  }
 }
 
 .heading-2 {
   font-size: 4rem;
   font-weight: 200;
   line-height: 1; //this makes the spacing between broken lines be smaller
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 4.5rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 3rem;
+    
+  }
+
+  @media only screen and (max-width: $bp-petit) {
+    font-size: 3.5rem;
+    
+  }
 }
 
 .heading-3 {

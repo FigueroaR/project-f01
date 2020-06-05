@@ -19,6 +19,10 @@ $color-grey-light-2: #aaa;
 /// FONT
 $font-primary: 'Noto Serif JP', serif;
 
+//////BReakpoints
+$bp-medium: 56.25em; // 900px/ 16px
+$bp-small: 37.5em; //600
+$bp-petit: 31.25em; //500
 
 *,
 *::before,
@@ -31,6 +35,10 @@ $font-primary: 'Noto Serif JP', serif;
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-medium) {
+
+  }
 }
 
 body {
@@ -48,6 +56,10 @@ body {
   grid-template-rows: 100vh repeat(2, 1fr) ;
   //grid-template-columns: repeat(6, 1fr);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+  @media only screen and (max-width: $bp-medium) {
+    margin: 0;
+  }
 
 }
 
