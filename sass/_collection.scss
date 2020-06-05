@@ -15,9 +15,11 @@
   grid-template-columns: repeat(auto-fit, min-content);
   //grid-template-rows: repeat(7, 95vw); // 5% of the view port width for height / will define th
   //grid-template-rows: repeat(auto-fit, minmax(min-content, max-content));
+  justify-items: center; 
+  align-content: center;
 
   &__image {
-    width: 100%;
+    width: 98%;
     height: 100%;
     object-fit: cover; // object fit only works if we set the height and the width
     display: block;
